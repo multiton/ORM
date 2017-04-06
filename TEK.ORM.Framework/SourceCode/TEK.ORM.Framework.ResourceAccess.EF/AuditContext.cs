@@ -16,7 +16,7 @@ namespace TEK.ORM.Framework.ResourceAccess.EF
 			if (builder.IsConfigured) return;
 
 			builder
-				.UseSqlServer("Server=MSC-PK01HMG;Database=EF7PocAudit;Integrated Security=false;User Id=sa;password=stalker45")
+				.UseSqlServer("Server=localhost;Database=EF7PocAudit;Integrated Security=false;User Id=sa;password=stalker45")
 				.ConfigureWarnings(x => x.Ignore(RelationalEventId.AmbientTransactionWarning));
 		}
 
