@@ -5,7 +5,6 @@ using System.Collections.Generic;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
-using Microsoft.EntityFrameworkCore.Infrastructure;
 
 using TEK.ORM.Framework.Entity;
 using TEK.ORM.Framework.Entity.Validate;
@@ -44,9 +43,7 @@ namespace TEK.ORM.Framework.ResourceAccess.EF
 		{
 			if (builder.IsConfigured) return;
 
-			builder
-				.UseSqlServer("Server=localhost;Database=EF7Poc;Integrated Security=false;uid=sa;password=stalker45")
-				.ConfigureWarnings(x => x.Ignore(RelationalEventId.AmbientTransactionWarning));
+            builder.UseSqlServer("Server=huron;Database=EF7Poc;Integrated Security=false;uid=sa;password=stalker45");
 		}
 
 		protected override IList<ValidationError> Validate()

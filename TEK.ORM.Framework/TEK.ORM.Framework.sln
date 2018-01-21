@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.10
+VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TEK.ORM.Framework.App", "SourceCode\TEK.ORM.Framework.App\TEK.ORM.Framework.App.csproj", "{B0BBD4CC-F61F-4DC8-A871-20B982BAF780}"
 EndProject
@@ -81,5 +81,8 @@ Global
 		{2937048F-C947-4894-AB81-2DE3BB2889FF} = {D0B58083-1A07-4B29-8EED-0E81F9B7611F}
 		{4A788B15-B078-49C0-B165-3FCF342EC447} = {2DCC055B-E4DF-480C-9CBE-3634DA774CFF}
 		{CB49C093-CA12-4F42-B4E3-D31FAF74C0F7} = {D0B58083-1A07-4B29-8EED-0E81F9B7611F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D51E3E20-339C-4CDC-AC7A-CB3AAF11E95D}
 	EndGlobalSection
 EndGlobal

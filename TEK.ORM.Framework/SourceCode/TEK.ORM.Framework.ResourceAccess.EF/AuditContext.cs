@@ -1,8 +1,6 @@
 ﻿using System.Linq;
 using System.Collections.Generic;
-
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Infrastructure;
 
 using TEK.ORM.Framework.Entity;
 using TEK.ORM.Framework.Entity.Validate;
@@ -15,9 +13,7 @@ namespace TEK.ORM.Framework.ResourceAccess.EF
 		{
 			if (builder.IsConfigured) return;
 
-			builder
-				.UseSqlServer("Server=localhost;Database=EF7PocAudit;Integrated Security=false;User Id=sa;password=stalker45")
-				.ConfigureWarnings(x => x.Ignore(RelationalEventId.AmbientTransactionWarning));
+            builder.UseSqlServer("Server=localhost;Database=EF7PocAudit;Integrated Security=false;User Id=sa;password=stalker45");
 		}
 
 		protected override void OnModelCreating(ModelBuilder builder)
